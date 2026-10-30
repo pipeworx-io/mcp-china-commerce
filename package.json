@@ -1,0 +1,33 @@
+{
+  "name": "@pipeworx/mcp-china-commerce",
+  "version": "0.1.0",
+  "description": "China's Ministry of Commerce (MOFCOM) 商务数据中心 (data.mofcom.gov.cn) — monthly national series for outward direct investment, overseas contracted engineering, overseas labour dispatch, and utilised inbound FDI. Keyless.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "mcp-china-commerce": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "china-commerce"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-china-commerce.git"
+  },
+  "mcpName": "io.github.pipeworx-io/china-commerce",
+  "pipeworx": {
+    "mode": "gateway",
+    "slug": "china-commerce",
+    "gatewaySlug": "china-commerce",
+    "sourceHash": "v1-2e79edf8600cb8214b6bacdf5df03ebc4c4f5d20af7f1c40d110ecf19f3d2a17",
+    "sourceCommit": "aef970216f5309cdd22a27ddfc275e472aaadac1"
+  }
+}
